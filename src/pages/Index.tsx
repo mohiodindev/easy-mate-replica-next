@@ -1,12 +1,234 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, BarChart3, Brain, Users, TrendingUp, Star, Play } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
+      {/* Header */}
+      <header className="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+            <span className="text-white text-sm font-bold">E</span>
+          </div>
+          <span className="text-xl font-bold text-gray-900">EasyMate</span>
+        </div>
+        <Button variant="outline" className="bg-black text-white border-black hover:bg-gray-800">
+          Meet EasyMate
+        </Button>
+      </header>
+
+      {/* Hero Section */}
+      <section className="px-6 py-20 text-center max-w-4xl mx-auto">
+        <div className="space-y-8">
+          <div>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Your <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI-Powered</span>
+              <br />
+              Analyst
+            </h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Share your business challenges or request in plain English and receive a tailored senior analyst AI tech solution instantly.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-lg border max-w-md mx-auto">
+            <p className="text-gray-700 text-left mb-4">
+              What is the best strategy to reduce customer churn in Q4?
+            </p>
+            <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white">
+              Get Analysis
+            </Button>
+          </div>
+
+          <p className="text-sm text-gray-500">Already signed in?</p>
+        </div>
+      </section>
+
+      {/* Features Grid */}
+      <section className="px-6 py-16 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <CardContent className="space-y-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
+                <BarChart3 className="w-6 h-6 text-orange-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Describe your Business challenge or needs</h3>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <CardContent className="space-y-4">
+              <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto">
+                <Brain className="w-6 h-6 text-pink-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">EasyMate architects an AI solution tailored for you</h3>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <CardContent className="space-y-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+                <Users className="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">3. EasyMate helps ease all the boring technology</h3>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <CardContent className="space-y-4">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                <TrendingUp className="w-6 h-6 text-green-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">4. Your productivity with hourly to real AI help</h3>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Why EasyMate Section */}
+      <section className="px-6 py-16 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why EasyMate?</h2>
+          
+          <div className="space-y-8">
+            <div className="flex items-start gap-4">
+              <Badge className="bg-pink-500 text-white min-w-8 h-8 flex items-center justify-center rounded-full">1</Badge>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">No Learning Curve</h3>
+                <p className="text-gray-600">No need jargon, No coding. Just share your business need in clear English. EasyMate does the rest.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <Badge className="bg-pink-500 text-white min-w-8 h-8 flex items-center justify-center rounded-full">2</Badge>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Instant Solutions</h3>
+                <p className="text-gray-600">Skip the messy rat thypte, EasyMate gives you custom solutions in one affordable monthly fee.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <Badge className="bg-pink-500 text-white min-w-8 h-8 flex items-center justify-center rounded-full">3</Badge>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Tailored Solution to Work</h3>
+                <p className="text-gray-600">No One-Mani and one resuits said. Can't Match are achieved easy when working.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <Badge className="bg-pink-500 text-white min-w-8 h-8 flex items-center justify-center rounded-full">4</Badge>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Boost Productivity</h3>
+                <p className="text-gray-600">Make Smart Analysis made. Air AI helps to automate your internal work.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <Badge className="bg-pink-500 text-white min-w-8 h-8 flex items-center justify-center rounded-full">5</Badge>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Always Evolving</h3>
+                <p className="text-gray-600">EasyMate learns your specialized invoking creativity & become. Designer to grow at the same pace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Demo Section */}
+      <section className="px-6 py-16 max-w-4xl mx-auto text-center">
+        <Card className="p-8 bg-gradient-to-br from-gray-50 to-white border-2">
+          <CardContent className="space-y-6">
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-orange-500 rounded-full"></div>
+                <div className="w-10 h-10 bg-blue-500 rounded-full"></div>
+                <div className="w-10 h-10 bg-green-500 rounded-full"></div>
+              </div>
+              <div className="text-left space-y-2">
+                <div className="bg-gray-100 rounded p-2 text-sm">Business Analysis</div>
+                <div className="bg-gray-100 rounded p-2 text-sm">Market Research</div>
+                <div className="bg-gray-100 rounded p-2 text-sm">Strategy Planning</div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Video Section */}
+      <section className="px-6 py-16 bg-gray-900 text-white text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">Watch EasyMate in Action</h2>
+          <div className="bg-gray-800 rounded-2xl p-16 relative">
+            <Button 
+              className="bg-pink-500 hover:bg-pink-600 text-white rounded-full w-16 h-16"
+              size="lg"
+            >
+              <Play className="w-6 h-6" />
+            </Button>
+          </div>
+          <Button className="mt-8 bg-pink-500 hover:bg-pink-600 text-white">
+            Start our analysis
+          </Button>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="px-6 py-16 max-w-4xl mx-auto text-center">
+        <div className="space-y-8">
+          <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto"></div>
+          <div>
+            <p className="text-sm text-gray-600 mb-2">Simon Bergmayr, CEO of Meet Sikre</p>
+            <p className="text-lg text-gray-800 italic">"It's like having a 24/7 Senior Analyst for your business."</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="px-6 py-20 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-center">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Unlock AI-Powered Efficiency- Get Started Instantly!
+          </h2>
+          <p className="text-xl opacity-90 max-w-2xl mx-auto">
+            Join thousands of businesses leveraging AI - powered solutions that revolutionize how they work. Cut operational costs, and drive growth.
+          </p>
+          <Button 
+            className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-3"
+            size="lg"
+          >
+            Book My Private Beta
+          </Button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="px-6 py-8 bg-gray-900 text-white text-center">
+        <div className="max-w-4xl mx-auto space-y-4">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
+              <span className="text-black text-xs font-bold">E</span>
+            </div>
+            <span className="font-bold">EasyMate</span>
+          </div>
+          <p className="text-sm text-gray-400">
+            Copyright © 2024 EasyMate. All rights reserved.
+          </p>
+          <div className="text-sm text-gray-400">
+            <span>Terms of use • Privacy Policy</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
