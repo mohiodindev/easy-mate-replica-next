@@ -6,7 +6,7 @@ import { ArrowRight, BarChart3, Brain, Users, TrendingUp, Star, Play } from "luc
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Header */}
       <header className="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
@@ -25,7 +25,7 @@ const Index = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Your <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI-Powered</span>
+              Your <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AI-Powered</span>
               <br />
               Analyst
             </h1>
@@ -38,7 +38,7 @@ const Index = () => {
             <p className="text-gray-700 text-left mb-4">
               What is the best strategy to reduce customer churn in Q4?
             </p>
-            <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+            <Button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
               Get Analysis
             </Button>
           </div>
@@ -56,18 +56,7 @@ const Index = () => {
                 <BarChart3 className="w-6 h-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Describe your Business challenge or needs</h3>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 hover:shadow-lg transition-shadow border-purple-100">
-            <CardContent className="space-y-4">
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
-                <Brain className="w-6 h-6 text-purple-600" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-2">EasyMate architects an AI solution tailored for you</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">1. Describe your Business challenge or needs</h3>
               </div>
             </CardContent>
           </Card>
@@ -75,7 +64,18 @@ const Index = () => {
           <Card className="text-center p-6 hover:shadow-lg transition-shadow border-indigo-100">
             <CardContent className="space-y-4">
               <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mx-auto">
-                <Users className="w-6 h-6 text-indigo-600" />
+                <Brain className="w-6 h-6 text-indigo-600" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">2. EasyMate architects an AI solution tailored for you</h3>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center p-6 hover:shadow-lg transition-shadow border-blue-100">
+            <CardContent className="space-y-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+                <Users className="w-6 h-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">3. EasyMate helps ease all the boring technology</h3>
@@ -83,7 +83,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="text-center p-6 hover:shadow-lg transition-shadow border-green-100">
+          <Card className="text-center p-6 hover:shadow-lg transition-shadow border-emerald-100">
             <CardContent className="space-y-4">
               <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto">
                 <TrendingUp className="w-6 h-6 text-emerald-600" />
@@ -147,18 +147,18 @@ const Index = () => {
 
       {/* Demo Section */}
       <section className="px-6 py-16 max-w-4xl mx-auto text-center">
-        <Card className="p-8 bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-200">
+        <Card className="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-200">
           <CardContent className="space-y-6">
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-blue-500 rounded-full"></div>
-                <div className="w-10 h-10 bg-purple-500 rounded-full"></div>
                 <div className="w-10 h-10 bg-indigo-500 rounded-full"></div>
+                <div className="w-10 h-10 bg-blue-400 rounded-full"></div>
               </div>
               <div className="text-left space-y-2">
                 <div className="bg-blue-100 rounded p-2 text-sm text-blue-800">Business Analysis</div>
-                <div className="bg-purple-100 rounded p-2 text-sm text-purple-800">Market Research</div>
-                <div className="bg-indigo-100 rounded p-2 text-sm text-indigo-800">Strategy Planning</div>
+                <div className="bg-indigo-100 rounded p-2 text-sm text-indigo-800">Market Research</div>
+                <div className="bg-blue-100 rounded p-2 text-sm text-blue-800">Strategy Planning</div>
               </div>
             </div>
           </CardContent>
@@ -195,7 +195,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+      <section className="px-6 py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold">
             Unlock AI-Powered Efficiency- Get Started Instantly!
